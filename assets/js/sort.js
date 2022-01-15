@@ -1,12 +1,12 @@
 const SORT_OPTIONS = [
   {
-    getName: () => 'Players',
+    getName: () => 'Онлайну',
     sortFunc: (a, b) => b.playerCount - a.playerCount,
     highlightedValue: 'player-count'
   },
   {
     getName: (app) => {
-      return `${app.publicConfig.graphDurationLabel} Peak`
+      return `${app.publicConfig.graphDurationLabel} пику`
     },
     sortFunc: (a, b) => {
       if (!a.lastPeakData && !b.lastPeakData) {
@@ -30,7 +30,7 @@ const SORT_OPTIONS = [
     highlightedValue: 'peak'
   },
   {
-    getName: () => 'Record',
+    getName: () => 'Макс. онлайну',
     sortFunc: (a, b) => {
       if (!a.lastRecordData && !b.lastRecordData) {
         return 0
