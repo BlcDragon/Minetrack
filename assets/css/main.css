@@ -123,11 +123,11 @@ header .logo-status {
 
 header .header-button {
   color: var(--text-color);
-  width: 83px;
+  width: 93px;
   height: 83px;
   text-align: center;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: -5px;
 }
 
